@@ -30,4 +30,18 @@ for (let i = 1; i <= 10; i++) {
 }
 
 /* 5. Tính tổng doanh thu 12 tháng */
-/* Chưa hiểu đề bài, ko thấy mảng doanh thu, chỉ thấy cấu trúc object tháng 2 { "month": 2, "total" : 100} */
+
+let revenues = [];
+let revenue = 100;
+let total = 0;
+
+for (let month = 1; month <= 12; month++) {
+    let randomRevenue = Math.floor(Math.random() * 800) + 100; // ✅ trong vòng lặp
+    revenue += randomRevenue;
+    revenues.push(revenue); // ✅ push vào mảng revenues
+    total += revenue;
+    console.log(`Tháng ${month}: ${revenue}`);
+}
+
+console.log(revenues);
+console.log(total);

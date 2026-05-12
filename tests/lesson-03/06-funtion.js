@@ -45,7 +45,7 @@ console.log(topStudents);
 
 /* 4. Viết hàm calculateInterest */
 function calculateInterest(principal, rate, year) {
-    let interest = principal * rate * year;
+    let interest = principal + (principal * rate * year/100);
     return interest;
 }
 
