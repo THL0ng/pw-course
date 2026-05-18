@@ -29,6 +29,8 @@ test('Test 4', async ({ page }) => {
     
         await page.locator('#add-note').click();
 
-        await page.locator('#search').fill("một hoặc nhiều")
     }
+
+    await page.locator('#search').fill("một hoặc nhiều")
+
 });
